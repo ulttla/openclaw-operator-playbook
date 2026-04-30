@@ -14,17 +14,20 @@ This repository documents public-safe patterns for supervised long-running AI wo
 
 You can use this repo without copying anyone else's private setup.
 
+Start with [`START_HERE.md`](START_HERE.md) if you want the fastest copy-and-adapt path.
+
 1. Read the short principles in [`docs/00-principles.md`](docs/00-principles.md).
-2. Copy [`templates/skills/lww.example.SKILL.md`](templates/skills/lww.example.SKILL.md) into your own notes or workspace as a starting point.
-3. Rename the trigger phrases to match your own workflow.
-4. Pick one 30-minute low-risk task.
-5. Run it with this loop:
+2. Copy the workspace starter files from [`docs/08-operator-starter-kit.md`](docs/08-operator-starter-kit.md).
+3. Copy [`templates/skills/lww.example.SKILL.md`](templates/skills/lww.example.SKILL.md) into your own notes or workspace as a starting point.
+4. Rename the trigger phrases to match your own workflow.
+5. Pick one 30-minute low-risk task.
+6. Run it with this loop:
    - define scope;
    - write a tiny state/checkpoint;
    - do useful work;
    - validate with one concrete check;
    - write a closeout using [`templates/prompts/closeout-template.md`](templates/prompts/closeout-template.md).
-6. Before publishing anything, run the checks in [`docs/06-redaction-and-safety.md`](docs/06-redaction-and-safety.md).
+7. Before publishing anything, run the checks in [`docs/06-redaction-and-safety.md`](docs/06-redaction-and-safety.md).
 
 ## What this covers
 

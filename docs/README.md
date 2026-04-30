@@ -2,6 +2,8 @@
 
 This folder contains the public operator playbook.
 
+If you are new, start with [`../START_HERE.md`](../START_HERE.md).
+
 ## Core guides
 
 | Document | Purpose |
@@ -44,3 +46,4 @@ This folder contains the public operator playbook.
 |---|---|
 | [`../examples/lww-closeout-example.md`](../examples/lww-closeout-example.md) | Example evidence-based closeout |
 | [`../examples/harness-review-example.md`](../examples/harness-review-example.md) | Example review packet, finding, fix, and final verdict |
+| [`../examples/operator-starter-kit-walkthrough.md`](../examples/operator-starter-kit-walkthrough.md) | Example of adapting the starter kit into a private working setup |
