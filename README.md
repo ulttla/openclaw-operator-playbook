@@ -28,7 +28,7 @@ You can use this repo without copying anyone else's private setup.
 
 ## What this covers
 
-- **Long Work Windows**: supervised, restartable AI work sessions with checkpoints and evidence-based closeout.
+- **Long Work Windows**: supervised, restartable AI work sessions from 30 minutes to 5 hours, plus campaign patterns up to 12 hours through chunked runs such as `5h + 5h + 2h`.
 - **Harness engineering**: when to use coding, review, research, local, or risk lanes.
 - **Knowledge operations**: how an operator knowledge base can work with memory, raw notes, staging, and durable wiki pages.
 - **Backup and recovery**: how to combine OpenClaw's native backup capability with operator-level restore discipline.

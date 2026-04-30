@@ -16,11 +16,41 @@ Normal chat turns are often too short for meaningful engineering work. A Long Wo
 
 ## Operating model
 
-- Window duration: usually 30 minutes to 5 hours.
-- Longer campaigns should be split into restartable chunks.
+- Single-window duration: usually 30 minutes to 5 hours.
+- Longer campaigns can run up to 12 hours when split into restartable chunks.
+- A 12-hour campaign should normally be planned as `5h + 5h + 2h`, with a checkpoint and transition gate between chunks.
 - Check-ins are progress reports, not artificial stopping points.
 - Closeout requires evidence, not just a summary.
 - External posting, config changes, restarts, secrets, and destructive cleanup remain approval-gated.
+
+## Campaign mode for 5-12 hours
+
+Use campaign mode when the work is too large for a single safe window but still belongs to one goal line.
+
+| Requested duration | Suggested chunk plan | Notes |
+|---|---|---|
+| 6-7 hours | `5h + 1-2h` | Good for one major build slice plus release cleanup |
+| 8-10 hours | `5h + 3-5h` | Good for build, review, deploy, and documentation cycles |
+| 12 hours | `5h + 5h + 2h` | Maximum recommended campaign; the final chunk should focus on release gates, validation, and handoff |
+
+A campaign is not one uninterrupted run. Each chunk should have:
+
+- its own state record and visible start/check-in/closeout trail;
+- a clear primary, secondary, and fallback queue;
+- a transition gate before the next chunk starts;
+- evidence from tests, link checks, review lanes, or smoke checks;
+- a manual resume phrase in case the session resets.
+
+The transition gate should answer:
+
+```text
+Did the last chunk produce material work?
+Are blockers named and approval-gated?
+Is the next chunk still inside the same requested scope?
+Is there enough context and checkpoint evidence to continue safely?
+```
+
+If the answer is no, stop and ask instead of automatically extending.
 
 ## Minimal state record
 
