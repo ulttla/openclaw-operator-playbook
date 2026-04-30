@@ -24,6 +24,8 @@ This folder contains the public operator playbook.
 | [`../templates/prompts/reviewer-packet-template.md`](../templates/prompts/reviewer-packet-template.md) | Packet for independent review lanes |
 | [`../templates/config/openclaw.example.json`](../templates/config/openclaw.example.json) | Minimal illustrative OpenClaw-style config fragment |
 | [`../templates/config/openclaw.operator-policy.example.json`](../templates/config/openclaw.operator-policy.example.json) | Conceptual operator policy, not a config schema |
+| [`../templates/config/backup.example.json`](../templates/config/backup.example.json) | Native backup CLI command examples plus operator checklist |
+| [`../templates/config/backup.operator-policy.example.json`](../templates/config/backup.operator-policy.example.json) | Conceptual backup policy checklist, not a config schema |
 
 ## Examples
 

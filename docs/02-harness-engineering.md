@@ -4,11 +4,15 @@ Harness engineering is the practice of routing tasks to the right model, tool, o
 
 The goal is not to create noisy debate. The goal is to reduce blind spots by separating builder, reviewer, researcher, risk, and operator responsibilities.
 
+## OpenClaw integration context
+
+OpenClaw can provide native integration surfaces for several lanes: model/provider routing, coding backends such as Codex or Claude Code when configured, skills, session/thread management, and exec approval posture. This guide does not replace those features. It describes the operator decision layer above them: which lane to choose, when to ask for a second opinion, and what evidence to record before publishing.
+
 ## Example routing matrix
 
 | Task type | Preferred lane | Reason |
 |---|---|---|
-| Code implementation | Codex or Claude Code | Strong repository editing and iterative debugging |
+| Code implementation | Codex or Claude Code when configured | Strong repository editing and iterative debugging |
 | Large refactor review | Independent reviewer lane | Good at reading structure and spotting hidden risk |
 | One-shot summary or drafting | Fast chat or research lane | Fast generation and synthesis |
 | Sensitive local review | Local model lane | Keeps private material local when quality is sufficient |

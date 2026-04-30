@@ -60,6 +60,17 @@ Always verify real config fields against official OpenClaw docs before copying e
 
 The files in `templates/` are examples or conceptual operator policies. They are intentionally sanitized and may not be valid drop-in OpenClaw config files unless explicitly stated. Use them to design your own setup, then check the official docs for exact syntax.
 
+## Validation before release
+
+Run at least the lightweight checks before publishing or tagging a release:
+
+```bash
+bash scripts/redaction_scan.sh .
+python3 scripts/check_markdown_links.py .
+```
+
+Treat redaction scan hits as review prompts, not automatic proof of failure. Placeholders and documentation examples can be intentional, but every hit should be explainable.
+
 ## Relationship to OpenClaw
 
 This is an independent operator playbook built around OpenClaw workflows. It is not official OpenClaw documentation.
