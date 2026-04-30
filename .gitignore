@@ -3,6 +3,13 @@
 *.secret
 *.pem
 *.key
+*.checkpoint
+*.state
+*.state.json
+secrets/
+oauth/
+tokens/
+cookies/
 .DS_Store
 node_modules/
 __pycache__/

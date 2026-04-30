@@ -2,27 +2,68 @@
 
 A practical field manual for running a personal AI operator workstation with OpenClaw.
 
-This repository documents patterns for supervised long-running AI work, multi-agent harness routing, structured knowledge management, and backup/recovery operations. It is not a product manual or a dump of a private setup. It is a public-safe playbook: the ideas, templates, and decision rules that can help others build their own operator workflow.
+This repository documents public-safe patterns for supervised long-running AI work, multi-agent harness routing, structured knowledge management, backup/recovery operations, and release hygiene. It is not official OpenClaw documentation and it is not a dump of a private setup. It is a playbook: the reusable operating model, templates, and decision rules that can help others build their own workflow.
+
+## Who this is for
+
+- People already using OpenClaw who want a more disciplined operating system for AI work.
+- Engineers who want to move from ad-hoc prompting to restartable, evidence-based work loops.
+- Builders who want to share their setup publicly without leaking private infrastructure.
+
+## Quick start: build your first operator loop
+
+You can use this repo without copying anyone else's private setup.
+
+1. Read the short principles in [`docs/00-principles.md`](docs/00-principles.md).
+2. Copy [`templates/skills/lww.example.SKILL.md`](templates/skills/lww.example.SKILL.md) into your own notes or workspace as a starting point.
+3. Rename the trigger phrases to match your own workflow.
+4. Pick one 30-minute low-risk task.
+5. Run it with this loop:
+   - define scope;
+   - write a tiny state/checkpoint;
+   - do useful work;
+   - validate with one concrete check;
+   - write a closeout using [`templates/prompts/closeout-template.md`](templates/prompts/closeout-template.md).
+6. Before publishing anything, run the checks in [`docs/06-redaction-and-safety.md`](docs/06-redaction-and-safety.md).
 
 ## What this covers
 
-- Long Work Windows: supervised, restartable AI work sessions with checkpoints and evidence-based closeout.
-- Harness engineering: when to use Codex, Claude Code, Gemini CLI, local models, or reviewer lanes.
-- Knowledge operations: how a personal `gun-wiki` style knowledge base can work with memory, raw notes, staging, and durable wiki pages.
-- Backup and recovery: manifest-based backups, restore thinking, and safe example configuration.
-- Redaction and safety: what should never be copied from a private AI workstation into a public repo.
+- **Long Work Windows**: supervised, restartable AI work sessions with checkpoints and evidence-based closeout.
+- **Harness engineering**: when to use coding, review, research, local, or risk lanes.
+- **Knowledge operations**: how an operator knowledge base can work with memory, raw notes, staging, and durable wiki pages.
+- **Backup and recovery**: how to combine OpenClaw's native backup capability with operator-level restore discipline.
+- **Redaction and safety**: what should never be copied from a private AI workstation into a public repo.
 
-## Start here
+## OpenClaw already provides primitives
 
-1. Read [`docs/00-principles.md`](docs/00-principles.md).
-2. Read [`docs/01-long-work-window.md`](docs/01-long-work-window.md) for the core operating loop.
-3. Read [`docs/02-harness-engineering.md`](docs/02-harness-engineering.md) for task routing.
-4. Use [`docs/06-redaction-and-safety.md`](docs/06-redaction-and-safety.md) before publishing any setup file.
+OpenClaw has native capabilities for models, skills, approvals, sessions, and backups. This playbook sits above those primitives and describes how an operator can combine them into a reliable workflow.
 
-## Repository status
+Useful OpenClaw surfaces include:
 
-Initial public playbook draft. Examples are intentionally sanitized and should be adapted before use.
+- `openclaw models` for model discovery and defaults.
+- `openclaw skills` and workspace `SKILL.md` files for reusable workflows.
+- `openclaw approvals` / `openclaw exec-policy` for exec approval posture.
+- `openclaw backup create --verify` for first-class local state archives.
+- `/new`, `/reset`, `/compact`, and session/thread concepts for context management.
+
+Always verify real config fields against official OpenClaw docs before copying examples into a live `openclaw.json`.
+
+## Recommended reading order
+
+1. [`docs/README.md`](docs/README.md) — full document index.
+2. [`docs/00-principles.md`](docs/00-principles.md) — core operating philosophy.
+3. [`docs/01-long-work-window.md`](docs/01-long-work-window.md) — the main supervised work loop.
+4. [`docs/02-harness-engineering.md`](docs/02-harness-engineering.md) — routing tasks across lanes.
+5. [`docs/06-redaction-and-safety.md`](docs/06-redaction-and-safety.md) — required before publishing setup material.
+
+## Public-safe example files
+
+The files in `templates/` are examples or conceptual operator policies. They are intentionally sanitized and may not be valid drop-in OpenClaw config files unless explicitly stated. Use them to design your own setup, then check the official docs for exact syntax.
 
 ## Relationship to OpenClaw
 
 This is an independent operator playbook built around OpenClaw workflows. It is not official OpenClaw documentation.
+
+## License
+
+MIT. See [`LICENSE`](LICENSE).

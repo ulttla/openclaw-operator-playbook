@@ -1,15 +1,25 @@
 {
+  "$schema_note": "Minimal illustrative OpenClaw-style config fragment. Verify real fields against the official OpenClaw docs before copying into openclaw.json.",
   "models": {
     "default": "provider/model-name",
-    "routingNotes": "Replace this with your own model routing policy. Do not publish real provider keys."
+    "fallbacks": [
+      "provider/backup-model"
+    ]
   },
-  "safety": {
-    "approvalRequiredFor": [
-      "gateway_restart",
-      "config_change",
-      "external_posting",
-      "destructive_cleanup",
-      "credential_handling"
+  "tools": {
+    "exec": {
+      "security": "deny",
+      "ask": "always"
+    }
+  },
+  "operator_notes": {
+    "approval_gates": "Do not encode these as fictional config keys. Keep approval gates in your operating policy and use OpenClaw's real exec approvals/config surfaces for enforcement.",
+    "never_publish": [
+      "provider keys",
+      "OAuth files",
+      "channel IDs",
+      "webhooks",
+      "private endpoints"
     ]
   }
 }

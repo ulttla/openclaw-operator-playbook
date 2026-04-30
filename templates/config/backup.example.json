@@ -1,16 +1,14 @@
 {
-  "backup": {
-    "workspace": "/path/to/workspace",
-    "destinations": [
-      "local-or-cloud-destination-example"
-    ],
-    "manifest": true,
-    "dryRunBeforePrune": true,
-    "exclude": [
-      "**/.env",
-      "**/tokens/**",
-      "**/oauth/**",
-      "**/cookies/**"
-    ]
-  }
+  "$schema_note": "Conceptual backup pattern template, not an OpenClaw config file. For OpenClaw's native backup archive, use the openclaw backup CLI.",
+  "commands": {
+    "preview": "openclaw backup create --dry-run --json",
+    "createAndVerify": "openclaw backup create --verify",
+    "verifyArchive": "openclaw backup verify ./YYYY-MM-DD-openclaw-backup.tar.gz"
+  },
+  "operatorChecklist": [
+    "Keep backups outside the source workspace/state tree.",
+    "Verify the archive manifest after creation.",
+    "Document restore steps before relying on the backup.",
+    "Exclude or separately protect secrets, OAuth files, and provider credentials."
+  ]
 }

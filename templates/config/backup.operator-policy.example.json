@@ -1,0 +1,23 @@
+{
+  "$schema_note": "Conceptual backup policy example, not an OpenClaw config schema. Use OpenClaw's built-in backup CLI for first-class OpenClaw state archives.",
+  "operatorBackupPolicy": {
+    "workspace": "/path/to/workspace",
+    "destinations": [
+      "local-or-cloud-destination-example"
+    ],
+    "manifestRequired": true,
+    "verifyAfterCreate": true,
+    "dryRunBeforePrune": true,
+    "excludePatterns": [
+      "**/.env",
+      "**/tokens/**",
+      "**/oauth/**",
+      "**/cookies/**"
+    ]
+  },
+  "openclawNativeReferences": {
+    "create": "openclaw backup create --verify",
+    "dryRun": "openclaw backup create --dry-run --json",
+    "verify": "openclaw backup verify ./backup.tar.gz"
+  }
+}
