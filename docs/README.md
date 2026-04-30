@@ -13,6 +13,7 @@ This folder contains the public operator playbook.
 | [`04-backup-and-recovery.md`](04-backup-and-recovery.md) | Native OpenClaw backup plus operator restore discipline |
 | [`05-model-routing.md`](05-model-routing.md) | Model/lane selection criteria and routing records |
 | [`06-redaction-and-safety.md`](06-redaction-and-safety.md) | Public release safety checklist and scanning patterns |
+| [`07-release-checklist.md`](07-release-checklist.md) | Pre-tag and pre-announcement release checklist |
 | [`glossary.md`](glossary.md) | Key terms used in the playbook |
 
 ## Templates

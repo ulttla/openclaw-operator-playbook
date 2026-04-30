@@ -55,6 +55,7 @@ Always verify real config fields against official OpenClaw docs before copying e
 3. [`docs/01-long-work-window.md`](docs/01-long-work-window.md) — the main supervised work loop.
 4. [`docs/02-harness-engineering.md`](docs/02-harness-engineering.md) — routing tasks across lanes.
 5. [`docs/06-redaction-and-safety.md`](docs/06-redaction-and-safety.md) — required before publishing setup material.
+6. [`docs/07-release-checklist.md`](docs/07-release-checklist.md) — use before tagging, announcing, or linking a release.
 
 ## Public-safe example files
 
