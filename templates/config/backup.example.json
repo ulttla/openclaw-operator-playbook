@@ -1,0 +1,16 @@
+{
+  "backup": {
+    "workspace": "/path/to/workspace",
+    "destinations": [
+      "local-or-cloud-destination-example"
+    ],
+    "manifest": true,
+    "dryRunBeforePrune": true,
+    "exclude": [
+      "**/.env",
+      "**/tokens/**",
+      "**/oauth/**",
+      "**/cookies/**"
+    ]
+  }
+}
