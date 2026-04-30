@@ -2,6 +2,29 @@
 
 Use this path if you want to turn the playbook into a practical operator workspace.
 
+## Choose your path
+
+| If you want... | Start with |
+|---|---|
+| A fast private workspace bootstrap | 15-minute path below |
+| A fuller operator setup | 60-minute path below |
+| Reusable procedures | `templates/runbooks/` |
+| Risk and routing rules | `templates/policies/` |
+| A public release checklist | `docs/07-release-checklist.md` |
+| A worked adaptation example | `examples/operator-starter-kit-walkthrough.md` |
+
+## Repository map
+
+```text
+docs/                 Guides and operating model
+templates/workspace/  Copy-and-adapt AGENTS/TOOLS/HEARTBEAT starters
+templates/config/     Public-safe config starters and conceptual policies
+templates/runbooks/   Practical procedures for release, deploy, and LWW campaigns
+templates/policies/   Approval and model-routing policy templates
+examples/             Worked examples and review records
+scripts/              Lightweight validation scripts
+```
+
 ## 15-minute path
 
 1. Read [`docs/00-principles.md`](docs/00-principles.md).
@@ -59,6 +82,12 @@ Do not publish customized files if they contain:
 - raw config dumps from a live workstation.
 
 ## Validation before sharing your adapted version
+
+```bash
+bash scripts/public_release_audit.sh .
+```
+
+Or run individual checks:
 
 ```bash
 python3 scripts/check_markdown_links.py .

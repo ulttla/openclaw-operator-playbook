@@ -11,14 +11,14 @@ Use this checklist before tagging, announcing, or linking a public operator-play
 
 ## 2. Redaction and metadata
 
-- [ ] Run the redaction scan:
+- [ ] Run the combined public release audit:
 
   ```bash
-  bash scripts/redaction_scan.sh .
+  bash scripts/public_release_audit.sh .
   ```
 
-- [ ] Manually explain every hit.
-- [ ] Check Git author and committer metadata:
+- [ ] Manually explain every redaction hit.
+- [ ] If needed, check Git author and committer metadata directly:
 
   ```bash
   git log --format='%H %an <%ae> %cn <%ce>'

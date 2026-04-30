@@ -53,6 +53,12 @@ Confirm:
 ## Validation
 
 ```bash
+bash scripts/public_release_audit.sh .
+```
+
+If you prefer separate checks:
+
+```bash
 python3 scripts/check_markdown_links.py .
 bash scripts/redaction_scan.sh .
 ```

@@ -78,7 +78,13 @@ For a more practical starting point, see the operator starter kit:
 
 ## Validation before release
 
-Run at least the lightweight checks before publishing or tagging a release:
+Run the combined public release audit before publishing or tagging a release:
+
+```bash
+bash scripts/public_release_audit.sh .
+```
+
+Or run the lightweight checks separately:
 
 ```bash
 bash scripts/redaction_scan.sh .
