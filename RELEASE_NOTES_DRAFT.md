@@ -33,4 +33,4 @@ Initial public release of a practical, public-safe OpenClaw operator playbook.
 - Templates are public-safe starters, not private production config.
 - Exact channel IDs, provider auth, browser profiles, hostnames, and deployment paths must be adapted locally and kept private.
 - OpenClaw config examples should be verified against the current official docs before applying to a live `openclaw.json`.
-- GitHub tag and GitHub Release creation remain explicit approval-gated actions.
+- Tag and GitHub Release are published for v0.1.0 after explicit approval.
