@@ -56,10 +56,18 @@ Always verify real config fields against official OpenClaw docs before copying e
 4. [`docs/02-harness-engineering.md`](docs/02-harness-engineering.md) — routing tasks across lanes.
 5. [`docs/06-redaction-and-safety.md`](docs/06-redaction-and-safety.md) — required before publishing setup material.
 6. [`docs/07-release-checklist.md`](docs/07-release-checklist.md) — use before tagging, announcing, or linking a release.
+7. [`docs/08-operator-starter-kit.md`](docs/08-operator-starter-kit.md) — copy-and-adapt starter kit for a practical operator workspace.
 
 ## Public-safe example files
 
 The files in `templates/` are examples or conceptual operator policies. They are intentionally sanitized and may not be valid drop-in OpenClaw config files unless explicitly stated. Use them to design your own setup, then check the official docs for exact syntax.
+
+For a more practical starting point, see the operator starter kit:
+
+- [`templates/workspace/AGENTS.operator.example.md`](templates/workspace/AGENTS.operator.example.md)
+- [`templates/workspace/TOOLS.operator.example.md`](templates/workspace/TOOLS.operator.example.md)
+- [`templates/workspace/HEARTBEAT.operator.example.md`](templates/workspace/HEARTBEAT.operator.example.md)
+- [`templates/config/openclaw.operator-starter.example.json5`](templates/config/openclaw.operator-starter.example.json5)
 
 ## Validation before release
 

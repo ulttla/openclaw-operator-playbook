@@ -1,0 +1,88 @@
+// Public-safe OpenClaw operator starter config.
+//
+// This is a schema-aware starter, not a complete production config.
+// Replace every placeholder, verify current fields against official docs,
+// and keep real secrets in supported auth/env stores instead of public repos.
+
+{
+  identity: {
+    name: "OperatorBot",
+    theme: "calm technical operator",
+    emoji: "🤖",
+  },
+
+  agents: {
+    defaults: {
+      workspace: "~/.openclaw/workspace",
+
+      // Primary/fallback model policy. Use provider/model refs available in
+      // your installation. Confirm with `openclaw models list`.
+      model: {
+        primary: "provider/strong-model",
+        fallbacks: [
+          "provider/fast-model",
+          "provider/local-or-low-cost-model",
+        ],
+      },
+
+      // Optional allowlist/catalog for chat model switching. If you set this,
+      // users can only switch to listed models unless you update the allowlist.
+      models: {
+        "provider/strong-model": { alias: "Strong" },
+        "provider/fast-model": { alias: "Fast" },
+        "provider/local-or-low-cost-model": { alias: "LocalOrCheap" },
+      },
+
+      // Keep bootstrap context bounded. Adjust only after observing real usage.
+      bootstrapMaxChars: 12000,
+      bootstrapTotalMaxChars: 60000,
+      contextLimits: {
+        memoryGetMaxChars: 12000,
+        memoryGetDefaultLines: 120,
+        toolResultMaxChars: 16000,
+        postCompactionMaxChars: 1800,
+      },
+
+      // Omit `skills` for unrestricted bundled/workspace skills. Set a list
+      // only when you want a strict agent-level allowlist.
+      // skills: ["github", "weather"],
+    },
+  },
+
+  // Session policy. Tune for your channel volume and privacy expectations.
+  session: {
+    scope: "per-sender",
+    resetTriggers: ["/new", "/reset"],
+    maintenance: {
+      mode: "warn",
+      pruneAfter: "30d",
+      maxEntries: 500,
+      rotateBytes: "10mb",
+      resetArchiveRetention: "30d",
+    },
+  },
+
+  // Exec posture. Effective host behavior is the stricter combination of
+  // tools.exec.* and host-local exec approvals. See OpenClaw exec approvals docs.
+  tools: {
+    exec: {
+      security: "allowlist", // "deny" | "allowlist" | "full"
+      ask: "on-miss",        // "off" | "on-miss" | "always"
+      strictInlineEval: true,
+    },
+  },
+
+  logging: {
+    level: "info",
+    redactSensitive: "tools",
+  },
+
+  messages: {
+    ackReaction: "👀",
+    ackReactionScope: "group-mentions",
+  },
+
+  // Channel examples are intentionally omitted from this public starter because
+  // they often contain private tokens, guild IDs, channel IDs, and user IDs.
+  // Add your own channel config from the official OpenClaw docs.
+}

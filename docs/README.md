@@ -14,6 +14,7 @@ This folder contains the public operator playbook.
 | [`05-model-routing.md`](05-model-routing.md) | Model/lane selection criteria and routing records |
 | [`06-redaction-and-safety.md`](06-redaction-and-safety.md) | Public release safety checklist and scanning patterns |
 | [`07-release-checklist.md`](07-release-checklist.md) | Pre-tag and pre-announcement release checklist |
+| [`08-operator-starter-kit.md`](08-operator-starter-kit.md) | Copy-and-adapt starter kit for a practical operator workspace |
 | [`glossary.md`](glossary.md) | Key terms used in the playbook |
 
 ## Templates
@@ -27,6 +28,10 @@ This folder contains the public operator playbook.
 | [`../templates/config/openclaw.operator-policy.example.json`](../templates/config/openclaw.operator-policy.example.json) | Conceptual operator policy, not a config schema |
 | [`../templates/config/backup.example.json`](../templates/config/backup.example.json) | Native backup CLI command examples plus operator checklist |
 | [`../templates/config/backup.operator-policy.example.json`](../templates/config/backup.operator-policy.example.json) | Conceptual backup policy checklist, not a config schema |
+| [`../templates/config/openclaw.operator-starter.example.json5`](../templates/config/openclaw.operator-starter.example.json5) | Schema-aware public-safe operator config starter |
+| [`../templates/workspace/AGENTS.operator.example.md`](../templates/workspace/AGENTS.operator.example.md) | Copy-and-adapt workspace operator instructions |
+| [`../templates/workspace/TOOLS.operator.example.md`](../templates/workspace/TOOLS.operator.example.md) | Copy-and-adapt local tool notes |
+| [`../templates/workspace/HEARTBEAT.operator.example.md`](../templates/workspace/HEARTBEAT.operator.example.md) | Copy-and-adapt proactive heartbeat policy |
 
 ## Examples
 
