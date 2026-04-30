@@ -32,6 +32,11 @@ This folder contains the public operator playbook.
 | [`../templates/workspace/AGENTS.operator.example.md`](../templates/workspace/AGENTS.operator.example.md) | Copy-and-adapt workspace operator instructions |
 | [`../templates/workspace/TOOLS.operator.example.md`](../templates/workspace/TOOLS.operator.example.md) | Copy-and-adapt local tool notes |
 | [`../templates/workspace/HEARTBEAT.operator.example.md`](../templates/workspace/HEARTBEAT.operator.example.md) | Copy-and-adapt proactive heartbeat policy |
+| [`../templates/policies/approval-gates.operator-policy.md`](../templates/policies/approval-gates.operator-policy.md) | Approval matrix template for risky actions |
+| [`../templates/policies/model-routing.operator-policy.md`](../templates/policies/model-routing.operator-policy.md) | Model and lane routing policy template |
+| [`../templates/runbooks/public-repo-release.runbook.md`](../templates/runbooks/public-repo-release.runbook.md) | Public repo release runbook |
+| [`../templates/runbooks/static-site-live-reflect.runbook.md`](../templates/runbooks/static-site-live-reflect.runbook.md) | Static site live verification runbook |
+| [`../templates/runbooks/long-work-window-campaign.runbook.md`](../templates/runbooks/long-work-window-campaign.runbook.md) | 5-12 hour LWW campaign runbook |
 
 ## Examples
 

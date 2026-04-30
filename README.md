@@ -68,6 +68,10 @@ For a more practical starting point, see the operator starter kit:
 - [`templates/workspace/TOOLS.operator.example.md`](templates/workspace/TOOLS.operator.example.md)
 - [`templates/workspace/HEARTBEAT.operator.example.md`](templates/workspace/HEARTBEAT.operator.example.md)
 - [`templates/config/openclaw.operator-starter.example.json5`](templates/config/openclaw.operator-starter.example.json5)
+- [`templates/policies/approval-gates.operator-policy.md`](templates/policies/approval-gates.operator-policy.md)
+- [`templates/policies/model-routing.operator-policy.md`](templates/policies/model-routing.operator-policy.md)
+- [`templates/runbooks/public-repo-release.runbook.md`](templates/runbooks/public-repo-release.runbook.md)
+- [`templates/runbooks/long-work-window-campaign.runbook.md`](templates/runbooks/long-work-window-campaign.runbook.md)
 
 ## Validation before release
 

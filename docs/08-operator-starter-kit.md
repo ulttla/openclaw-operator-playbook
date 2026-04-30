@@ -13,6 +13,11 @@ The goal is to share enough structure to be useful without publishing private in
 | [`../templates/workspace/HEARTBEAT.operator.example.md`](../templates/workspace/HEARTBEAT.operator.example.md) | `<workspace>/HEARTBEAT.md` | Proactive wake behavior without noisy spam |
 | [`../templates/skills/lww.example.SKILL.md`](../templates/skills/lww.example.SKILL.md) | `<workspace>/skills/lww-example/SKILL.md` | Custom long-work-window style skill |
 | [`../templates/config/openclaw.operator-starter.example.json5`](../templates/config/openclaw.operator-starter.example.json5) | private config notes | Schema-aware OpenClaw config starting point |
+| [`../templates/policies/approval-gates.operator-policy.md`](../templates/policies/approval-gates.operator-policy.md) | private or public-safe policy docs | Approval matrix for risky actions |
+| [`../templates/policies/model-routing.operator-policy.md`](../templates/policies/model-routing.operator-policy.md) | private or public-safe policy docs | Model and lane routing policy |
+| [`../templates/runbooks/public-repo-release.runbook.md`](../templates/runbooks/public-repo-release.runbook.md) | project runbook | Public repo release procedure |
+| [`../templates/runbooks/static-site-live-reflect.runbook.md`](../templates/runbooks/static-site-live-reflect.runbook.md) | project runbook | Static site deploy verification procedure |
+| [`../templates/runbooks/long-work-window-campaign.runbook.md`](../templates/runbooks/long-work-window-campaign.runbook.md) | project runbook | 5-12 hour campaign procedure |
 
 Do not copy these files blindly into a public repo after customization. Your customized versions may contain private paths, channel IDs, hostnames, or operating assumptions.
 
@@ -29,6 +34,26 @@ cp templates/skills/lww.example.SKILL.md ~/.openclaw/workspace/skills/lww-exampl
 ```
 
 Then edit the copied files for your environment.
+
+### 1b. Add practical runbooks
+
+Pick only the runbooks you actually need:
+
+```bash
+mkdir -p ~/.openclaw/workspace/runbooks ~/.openclaw/workspace/policies
+cp templates/runbooks/public-repo-release.runbook.md ~/.openclaw/workspace/runbooks/
+cp templates/runbooks/long-work-window-campaign.runbook.md ~/.openclaw/workspace/runbooks/
+cp templates/policies/approval-gates.operator-policy.md ~/.openclaw/workspace/policies/
+cp templates/policies/model-routing.operator-policy.md ~/.openclaw/workspace/policies/
+```
+
+For a portfolio or static site, also copy:
+
+```bash
+cp templates/runbooks/static-site-live-reflect.runbook.md ~/.openclaw/workspace/runbooks/
+```
+
+These files are meant to be edited. Replace placeholders with your project names, validation commands, and approval rules.
 
 ### 2. Decide your approval posture
 
