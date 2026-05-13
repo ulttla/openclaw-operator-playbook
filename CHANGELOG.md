@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Expanded backup/recovery guidance with secondary operator lane and update/restart recovery gates.
 - No unreleased changes yet.
 
 ## v0.1.0 (2026-04-30)

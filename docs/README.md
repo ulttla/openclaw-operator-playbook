@@ -12,7 +12,7 @@ If you are new, start with [`../START_HERE.md`](../START_HERE.md).
 | [`01-long-work-window.md`](01-long-work-window.md) | Bounded long-running work sessions with checkpoints and closeout |
 | [`02-harness-engineering.md`](02-harness-engineering.md) | Routing tasks across coding, review, research, local, and risk lanes |
 | [`03-knowledge-operations.md`](03-knowledge-operations.md) | Raw notes, staging, wiki, memory pointers, and audit flow |
-| [`04-backup-and-recovery.md`](04-backup-and-recovery.md) | Native OpenClaw backup plus operator restore discipline |
+| [`04-backup-and-recovery.md`](04-backup-and-recovery.md) | Native OpenClaw backup, operator restore discipline, secondary operator lane, and update/restart gates |
 | [`05-model-routing.md`](05-model-routing.md) | Model/lane selection criteria and routing records |
 | [`06-redaction-and-safety.md`](06-redaction-and-safety.md) | Public release safety checklist and scanning patterns |
 | [`07-release-checklist.md`](07-release-checklist.md) | Pre-tag and pre-announcement release checklist |

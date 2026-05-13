@@ -35,6 +35,32 @@ A backup is only useful if you know what recovery looks like. At minimum, docume
 4. which secrets must be re-created instead of restored;
 5. the smoke check that proves OpenClaw is usable again.
 
+
+## Secondary operator lane
+
+A backup agent or secondary assistant can be useful, but treat it as an audit and recovery lane rather than unchecked failover. A safe pattern is:
+
+- give the secondary lane read access to public-safe docs, recovery notes, and redacted checklists;
+- use it to compare update plans, smoke evidence, and rollback gaps;
+- require human approval before service restarts, config changes, credential handling, or version changes;
+- keep channel ownership separated so two assistants do not answer or mutate the same workflow at once;
+- record any recovery work as a sanitized closeout that the primary workspace can later digest.
+
+This gives the operator a way to reason during a primary-assistant outage without turning the secondary lane into an unsupervised production administrator.
+
+## Update and restart recovery gates
+
+Before updating OpenClaw or restarting a gateway/service, capture:
+
+1. explicit approval for the specific action;
+2. a current config/state backup or native backup archive;
+3. rollback steps and the artifact or commit to roll back to;
+4. a continuation plan for the chat/session that requested the change;
+5. a smoke checklist covering messaging, memory, scheduled jobs, browser/profile behavior, and sub-agent return paths where relevant;
+6. a closeout that names known bypasses or remaining risks.
+
+A version update is not just a package operation. It changes the control plane that coordinates all future work, so rollback and evidence belong in the same approval packet.
+
 ## Public-safe sharing
 
 Share patterns and redacted templates. Do not publish real destinations, credentials, tokens, OAuth files, hostnames, private paths, or raw archive manifests.
