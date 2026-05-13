@@ -26,7 +26,7 @@ Initial public release of a practical, public-safe OpenClaw operator playbook.
 - Public release audit passed.
 - Redaction scan reviewed; hits are documentation examples, placeholders, ignore patterns, or scanner regex strings.
 - Git metadata checked; public branch author/committer metadata uses GitHub noreply email and contains no private local hostname suffix.
-- gunkr.com portfolio integration live smoke passed after File Manager fallback.
+- Portfolio integration is linked from gunkr.com; live-site reflection should be verified separately with the static-site smoke checks whenever portfolio files change.
 
 ## Known limitations
 

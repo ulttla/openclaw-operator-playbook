@@ -35,6 +35,8 @@ Start with [`START_HERE.md`](START_HERE.md) if you want the fastest copy-and-ada
 - **Harness engineering**: when to use coding, review, research, local, or risk lanes.
 - **Knowledge operations**: how an operator knowledge base can work with memory, raw notes, staging, and durable wiki pages.
 - **Backup and recovery**: how to combine OpenClaw's native backup capability with operator-level restore discipline.
+- **Update safety**: how to test runtime updates in isolated worktrees before touching live operator services.
+- **Research lanes**: how to configure searchable secondary lanes without leaking credentials.
 - **Redaction and safety**: what should never be copied from a private AI workstation into a public repo.
 
 ## OpenClaw already provides primitives

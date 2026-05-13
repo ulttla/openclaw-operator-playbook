@@ -48,6 +48,8 @@ A backup agent or secondary assistant can be useful, but treat it as an audit an
 
 This gives the operator a way to reason during a primary-assistant outage without turning the secondary lane into an unsupervised production administrator.
 
+See [`09-secondary-operator-lane.md`](09-secondary-operator-lane.md) for the detailed secondary-lane checklist.
+
 ## Update and restart recovery gates
 
 Before updating OpenClaw or restarting a gateway/service, capture:

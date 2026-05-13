@@ -18,6 +18,8 @@ If you are new, start with [`../START_HERE.md`](../START_HERE.md).
 | [`07-release-checklist.md`](07-release-checklist.md) | Pre-tag and pre-announcement release checklist |
 | [`08-operator-starter-kit.md`](08-operator-starter-kit.md) | Copy-and-adapt starter kit for a practical operator workspace |
 | [`09-secondary-operator-lane.md`](09-secondary-operator-lane.md) | Backup/audit assistant lane for update, restart, and recovery review |
+| [`10-update-safety-worktrees.md`](10-update-safety-worktrees.md) | Isolated worktree pattern for safe runtime updates |
+| [`11-research-lane-web-setup.md`](11-research-lane-web-setup.md) | Search/extract backend setup for secondary research lanes |
 | [`glossary.md`](glossary.md) | Key terms used in the playbook |
 
 ## Templates

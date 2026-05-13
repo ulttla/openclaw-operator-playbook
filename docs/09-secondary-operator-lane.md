@@ -50,3 +50,5 @@ Before the secondary lane recommends a risky action, assemble:
 > A secondary operator lane reviewed a proposed control-plane update, confirmed rollback anchors and smoke-test coverage, then recorded a sanitized closeout after the approved change.
 
 This wording shows operational maturity without claiming autonomous production repair.
+
+See [`04-backup-and-recovery.md`](04-backup-and-recovery.md) for the broader backup, update, and restart recovery gate pattern.
