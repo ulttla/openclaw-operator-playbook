@@ -17,6 +17,7 @@ If you are new, start with [`../START_HERE.md`](../START_HERE.md).
 | [`06-redaction-and-safety.md`](06-redaction-and-safety.md) | Public release safety checklist and scanning patterns |
 | [`07-release-checklist.md`](07-release-checklist.md) | Pre-tag and pre-announcement release checklist |
 | [`08-operator-starter-kit.md`](08-operator-starter-kit.md) | Copy-and-adapt starter kit for a practical operator workspace |
+| [`09-secondary-operator-lane.md`](09-secondary-operator-lane.md) | Backup/audit assistant lane for update, restart, and recovery review |
 | [`glossary.md`](glossary.md) | Key terms used in the playbook |
 
 ## Templates

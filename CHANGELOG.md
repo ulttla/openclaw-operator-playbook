@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added a Secondary operator lane guide for backup/audit assistant workflows.
 - Expanded backup/recovery guidance with secondary operator lane and update/restart recovery gates.
 - No unreleased changes yet.
 
