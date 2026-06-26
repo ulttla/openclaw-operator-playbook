@@ -32,6 +32,24 @@ A useful split is:
 | Secondary operator | Audit, recovery plan review, smoke evidence review |
 | Human operator | Approval for risky changes and final accountability |
 
+For larger workstations, separate the collaboration surfaces too. For example,
+one shared space can be reserved for knowledge-base work while another handles
+general two-operator tasks. Public documentation should describe the roles, not
+raw channel names, IDs, transcripts, or private runtime details.
+
+## Shared brain pattern
+
+A secondary lane is more useful when it can retrieve the same durable context
+as the primary lane. A wiki-first hybrid knowledge system works well here:
+
+- raw captures preserve evidence from long work windows and recovery work;
+- staging converts private session context into reusable patterns;
+- stable wiki pages become the shared source of truth;
+- fast memory stores only pointers, safety rules, and recent checkpoints.
+
+This lets the secondary lane review decisions without copying private runtime
+state into public repos.
+
 ## Recovery packet
 
 Before the secondary lane recommends a risky action, assemble:

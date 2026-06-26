@@ -20,6 +20,22 @@ raw -> staging -> wiki -> audit
 
 The goal is not to put everything into memory. The goal is to keep memory small and useful while the wiki carries durable structure.
 
+## Wiki-first hybrid recall
+
+For a mature operator workspace, the durable wiki should become the primary
+knowledge layer. Memory stays small and operational: safety rules, recent
+checkpoints, boot pointers, and emergency facts. When a task depends on prior
+decisions or project knowledge, the preferred lookup order is:
+
+1. search the wiki or a combined memory/wiki corpus;
+2. read the source-backed wiki note or mirror;
+3. fall back to small durable memory pointers;
+4. use raw captures only when stable notes are missing;
+5. search the web only when the answer depends on current external facts.
+
+This avoids two failure modes: a memory file that becomes too large to trust,
+and a wiki that is rich but invisible to the operator at decision time.
+
 ## One full rotation example
 
 ### 1. Raw capture
@@ -77,3 +93,14 @@ Public release safety checklist lives at wiki/operations/public-release-checklis
 ```
 
 This keeps retrieval fast without making memory a dumping ground.
+
+## Cross-operator digestion
+
+If two assistants share one knowledge base, keep runtime ownership separate but
+make the digestion path common. A useful public-safe pattern is:
+
+- one operator performs broad orchestration and closeout capture;
+- another operator reviews research, recovery, or cleanup candidates;
+- raw captures are deduplicated before promotion;
+- only stable, redacted patterns move into the wiki;
+- public repos receive sanitized operating patterns, not private channel logs.

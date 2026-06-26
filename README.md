@@ -2,7 +2,7 @@
 
 A practical field manual for running a personal AI operator workstation with OpenClaw.
 
-This repository documents public-safe patterns for supervised long-running AI work, multi-agent harness routing, structured knowledge management, backup/recovery operations, and release hygiene. It is not official OpenClaw documentation and it is not a dump of a private setup. It is a playbook: the reusable operating model, templates, and decision rules that can help others build their own workflow.
+This repository documents public-safe patterns for supervised long-running AI work, multi-agent harness routing, wiki-first hybrid knowledge management, backup/recovery operations, and release hygiene. It is not official OpenClaw documentation and it is not a dump of a private setup. It is a playbook: the reusable operating model, templates, and decision rules that can help others build their own workflow.
 
 ## Who this is for
 
@@ -33,7 +33,7 @@ Start with [`START_HERE.md`](START_HERE.md) if you want the fastest copy-and-ada
 
 - **Long Work Windows**: supervised, restartable AI work sessions from 30 minutes to 5 hours, plus campaign patterns up to 12 hours through chunked runs such as `5h + 5h + 2h`.
 - **Harness engineering**: when to use coding, review, research, local, or risk lanes.
-- **Knowledge operations**: how an operator knowledge base can work with memory, raw notes, staging, and durable wiki pages.
+- **Knowledge operations**: how a wiki-first hybrid operator knowledge base can work with memory, raw notes, staging, durable wiki pages, and audit loops.
 - **Backup and recovery**: how to combine OpenClaw's native backup capability with operator-level restore discipline.
 - **Update safety**: how to test runtime updates in isolated worktrees before touching live operator services.
 - **Research lanes**: how to configure searchable secondary lanes without leaking credentials.
