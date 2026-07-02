@@ -10,7 +10,7 @@ Use this path if you want to turn the playbook into a practical operator workspa
 | A fuller operator setup | 60-minute path below |
 | Reusable procedures | `templates/runbooks/` |
 | Risk and routing rules | `templates/policies/` |
-| A public release checklist | `docs/07-release-checklist.md` |
+| Publication readiness checks | `docs/07-release-checklist.md` |
 | A worked adaptation example | `examples/operator-starter-kit-walkthrough.md` |
 
 ## Repository map

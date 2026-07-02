@@ -1,12 +1,12 @@
-# Public Release Checklist
+# Publication Readiness Check
 
-Use this checklist before tagging, announcing, or linking a public operator-playbook release.
+Use this guide before tagging, announcing, or linking a public operator-playbook version.
 
-## 1. Scope and claims
+## 1. Scope and evidence
 
 - [ ] The release goal is clear.
 - [ ] Non-goals are explicit.
-- [ ] Personal workflow patterns are not presented as built-in OpenClaw features.
+- [ ] Operator workflow patterns are not presented as built-in OpenClaw features.
 - [ ] Config examples are either real, minimal fragments or clearly labeled conceptual templates.
 
 ## 2. Redaction and metadata
@@ -39,7 +39,7 @@ Use this checklist before tagging, announcing, or linking a public operator-play
 
 ## 4. Review evidence
 
-For public-facing releases, prefer at least one independent review lane:
+For public-facing versions, prefer at least one independent review lane:
 
 - [ ] Docs/readability review.
 - [ ] Freshness/accuracy review against current OpenClaw behavior.

@@ -14,8 +14,8 @@ If you are new, start with [`../START_HERE.md`](../START_HERE.md).
 | [`03-knowledge-operations.md`](03-knowledge-operations.md) | Raw notes, staging, wiki, memory pointers, and audit flow |
 | [`04-backup-and-recovery.md`](04-backup-and-recovery.md) | Native OpenClaw backup, operator restore discipline, secondary operator lane, and update/restart gates |
 | [`05-model-routing.md`](05-model-routing.md) | Model/lane selection criteria and routing records |
-| [`06-redaction-and-safety.md`](06-redaction-and-safety.md) | Public release safety checklist and scanning patterns |
-| [`07-release-checklist.md`](07-release-checklist.md) | Pre-tag and pre-announcement release checklist |
+| [`06-redaction-and-safety.md`](06-redaction-and-safety.md) | Publication safety checks and scanning patterns |
+| [`07-release-checklist.md`](07-release-checklist.md) | Pre-tag and pre-announcement readiness checks |
 | [`08-operator-starter-kit.md`](08-operator-starter-kit.md) | Copy-and-adapt starter kit for a practical operator workspace |
 | [`09-secondary-operator-lane.md`](09-secondary-operator-lane.md) | Backup/audit assistant lane for update, restart, and recovery review |
 | [`10-update-safety-worktrees.md`](10-update-safety-worktrees.md) | Isolated worktree pattern for safe runtime updates |

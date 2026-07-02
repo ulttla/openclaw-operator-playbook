@@ -27,7 +27,7 @@ Start with [`START_HERE.md`](START_HERE.md) if you want the fastest copy-and-ada
    - do useful work;
    - validate with one concrete check;
    - write a closeout using [`templates/prompts/closeout-template.md`](templates/prompts/closeout-template.md).
-7. Before publishing anything, run the checks in [`docs/06-redaction-and-safety.md`](docs/06-redaction-and-safety.md).
+7. Before sharing anything publicly, run the checks in [`docs/06-redaction-and-safety.md`](docs/06-redaction-and-safety.md).
 
 ## What this covers
 
@@ -59,8 +59,8 @@ Always verify real config fields against official OpenClaw docs before copying e
 2. [`docs/00-principles.md`](docs/00-principles.md) — core operating philosophy.
 3. [`docs/01-long-work-window.md`](docs/01-long-work-window.md) — the main supervised work loop.
 4. [`docs/02-harness-engineering.md`](docs/02-harness-engineering.md) — routing tasks across lanes.
-5. [`docs/06-redaction-and-safety.md`](docs/06-redaction-and-safety.md) — required before publishing setup material.
-6. [`docs/07-release-checklist.md`](docs/07-release-checklist.md) — use before tagging, announcing, or linking a release.
+5. [`docs/06-redaction-and-safety.md`](docs/06-redaction-and-safety.md) — required before sharing setup material.
+6. [`docs/07-release-checklist.md`](docs/07-release-checklist.md) — use before tagging, announcing, or linking a public version.
 7. [`docs/08-operator-starter-kit.md`](docs/08-operator-starter-kit.md) — copy-and-adapt starter kit for a practical operator workspace.
 
 ## Public-safe example files
@@ -80,7 +80,7 @@ For a more practical starting point, see the operator starter kit:
 
 ## Validation before release
 
-Run the combined public release audit before publishing or tagging a release:
+Run the combined public-readiness audit before publishing or tagging a release:
 
 ```bash
 bash scripts/public_release_audit.sh .
