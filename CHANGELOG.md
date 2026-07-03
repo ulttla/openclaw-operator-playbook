@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Replaced Gemini CLI research-lane examples with Antigravity CLI.
+- Added a public-safe OpenClaw and Hermes complementary operator setup guide.
+- Added pack-based harness consensus, checkpoint resume, browser-profile isolation, and search fallback-chain patterns.
 - Added isolated update worktree and research-lane web setup guides.
 - Added a Secondary operator lane guide for backup/audit assistant workflows.
 - Expanded backup/recovery guidance with secondary operator lane and update/restart recovery gates.

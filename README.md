@@ -37,6 +37,7 @@ Start with [`START_HERE.md`](START_HERE.md) if you want the fastest copy-and-ada
 - **Backup and recovery**: how to combine OpenClaw's native backup capability with operator-level restore discipline.
 - **Update safety**: how to test runtime updates in isolated worktrees before touching live operator services.
 - **Research lanes**: how to configure searchable secondary lanes without leaking credentials.
+- **Complementary operator setup**: how to split OpenClaw and Hermes responsibilities without creating unattended automation.
 - **Redaction and safety**: what should never be copied from a private AI workstation into a public repo.
 
 ## OpenClaw already provides primitives
@@ -62,6 +63,7 @@ Always verify real config fields against official OpenClaw docs before copying e
 5. [`docs/06-redaction-and-safety.md`](docs/06-redaction-and-safety.md) — required before sharing setup material.
 6. [`docs/07-release-checklist.md`](docs/07-release-checklist.md) — use before tagging, announcing, or linking a public version.
 7. [`docs/08-operator-starter-kit.md`](docs/08-operator-starter-kit.md) — copy-and-adapt starter kit for a practical operator workspace.
+8. [`docs/12-openclaw-hermes-complementary-setup.md`](docs/12-openclaw-hermes-complementary-setup.md) — a public-safe OpenClaw + Hermes role split.
 
 ## Public-safe example files
 

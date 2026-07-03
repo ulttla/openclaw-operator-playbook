@@ -70,3 +70,5 @@ Before the secondary lane recommends a risky action, assemble:
 This wording shows operational maturity without claiming autonomous production repair.
 
 See [`04-backup-and-recovery.md`](04-backup-and-recovery.md) for the broader backup, update, and restart recovery gate pattern.
+
+For a concrete OpenClaw and Hermes role split, see [`12-openclaw-hermes-complementary-setup.md`](12-openclaw-hermes-complementary-setup.md).

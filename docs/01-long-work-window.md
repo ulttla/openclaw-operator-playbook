@@ -120,6 +120,13 @@ If the session resets or the agent loses context:
 3. Resume the first safe next action.
 4. Ask for approval only if the next step crosses a gate.
 
+For longer campaigns, treat resume as a two-step protocol:
+
+1. **Prepare**: write a compact checkpoint with scope, current status, touched artifacts, validation evidence, blockers, approval gates, and the next safe command or edit.
+2. **Resume**: re-read that checkpoint, verify the current repo or runtime state, then continue only the first safe next action.
+
+This keeps a reset from becoming a new planning session and prevents stale context from crossing an approval gate.
+
 ## Example slash-style command design
 
 See [`../templates/skills/lww.example.SKILL.md`](../templates/skills/lww.example.SKILL.md).

@@ -4,7 +4,7 @@ Model routing should be based on task requirements, not hype.
 
 ## OpenClaw already provides
 
-OpenClaw has native model discovery and configuration surfaces, including model status/list/set/scan commands, provider catalogs, fallbacks, and agent-level defaults. It can also integrate coding and research backends such as Codex, Claude Code, Gemini CLI, local models, and other providers depending on your configuration.
+OpenClaw has native model discovery and configuration surfaces, including model status/list/set/scan commands, provider catalogs, fallbacks, and agent-level defaults. It can also integrate coding and research backends such as Codex, Claude Code, Antigravity CLI, local models, and other providers depending on your configuration.
 
 This playbook is about the operator policy on top of those primitives: when to choose one lane over another, how to record the reason, and where human approval remains required.
 
@@ -26,7 +26,7 @@ This playbook is about the operator policy on top of those primitives: when to c
 | Low-risk summarization | Fast inexpensive chat model | Cheap and quick enough |
 | Repository implementation | Coding agent lane such as Codex or Claude Code | Better file editing and iterative debugging |
 | Deep design or code critique | Reviewer lane with a different model family | Reduces same-model blind spots |
-| Broad research or alternative framing | Research lane such as Gemini CLI | Good breadth and comparison |
+| Broad research or alternative framing | Research lane such as Antigravity CLI | Good breadth and comparison |
 | Sensitive local review | Local model lane if quality is sufficient | Keeps private context local |
 | External publishing or destructive action | Human approval gate | The operator owns the risk |
 

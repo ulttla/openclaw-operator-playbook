@@ -20,6 +20,7 @@ If you are new, start with [`../START_HERE.md`](../START_HERE.md).
 | [`09-secondary-operator-lane.md`](09-secondary-operator-lane.md) | Backup/audit assistant lane for update, restart, and recovery review |
 | [`10-update-safety-worktrees.md`](10-update-safety-worktrees.md) | Isolated worktree pattern for safe runtime updates |
 | [`11-research-lane-web-setup.md`](11-research-lane-web-setup.md) | Search/extract backend setup for secondary research lanes |
+| [`12-openclaw-hermes-complementary-setup.md`](12-openclaw-hermes-complementary-setup.md) | Public-safe role split for OpenClaw and Hermes complementary operation |
 | [`glossary.md`](glossary.md) | Key terms used in the playbook |
 
 ## Templates

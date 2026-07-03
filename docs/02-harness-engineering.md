@@ -27,6 +27,33 @@ OpenClaw can provide native integration surfaces for several lanes: model/provid
 - **Fact-checker**: verifies claims and evidence.
 - **Operator**: decides what is safe to run or publish.
 
+## Pack-based routing
+
+For non-trivial public or implementation work, route lanes as a small pack instead of a loose sequence of ad-hoc opinions.
+
+Example pack declaration:
+
+```text
+Pack: implementation review
+Required lanes: builder, implementation reviewer, fact-checker
+Scope: update public docs for a specific operating pattern
+Skip reason: none
+Expected result: patch, validation evidence, and consensus notes
+```
+
+Example consensus block:
+
+```text
+Lanes used: builder, reviewer, fact-checker
+Agreed: wording is public-safe and links pass
+Disagreed: reviewer wanted stronger caveat on automation claims
+Operator verdict: partially agreed
+Adoption reason: caveat added; no extra scope accepted
+Follow-up: run release audit before push
+```
+
+The important part is not the lane count. The value is making agreement, disagreement, and adoption rationale visible before a result is treated as publishable.
+
 ## Trigger examples
 
 ### Example A: implementation review

@@ -10,6 +10,7 @@ Use this as a public-safe starting point for `TOOLS.md`. Keep shared skills gene
 - Use browser automation only when login state, JavaScript rendering, or UI interaction matters.
 - Prefer official docs and local docs before making claims about OpenClaw behavior.
 - For OpenClaw configuration fields, verify against the current configuration docs or schema before editing examples.
+- Define a primary search provider and a fallback chain in your private notes. Keep provider keys and exact quota details out of public docs.
 
 ## Browser profiles
 
@@ -21,6 +22,8 @@ Example private mapping shape:
 project-a -> browser-profile-a
 project-b -> browser-profile-b
 ```
+
+For multi-channel workspaces, map each managed channel or project area to a dedicated browser profile. This reduces session bleed between client work, research, portfolio publishing, and admin tools.
 
 ## Deployment validation
 
