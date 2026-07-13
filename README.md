@@ -31,7 +31,8 @@ Start with [`START_HERE.md`](START_HERE.md) if you want the fastest copy-and-ada
 
 ## What this covers
 
-- **Long Work Windows**: supervised, restartable AI work sessions from 30 minutes to 5 hours, plus campaign patterns up to 12 hours through chunked runs such as `5h + 5h + 2h`.
+- **Long Work Windows**: supervised, restartable AI work sessions from 30 minutes to 5 hours, plus campaign patterns up to 12 hours with registration proof, missed-execution gates, and transactional closeout.
+- **Workboard-backed execution**: decompose substantial goals into owned cards with status and proof while keeping autonomous dispatch canary-gated.
 - **Harness engineering**: when to use coding, review, research, local, or risk lanes.
 - **Knowledge operations**: how a wiki-first hybrid operator knowledge base can work with memory, raw notes, staging, durable wiki pages, and audit loops.
 - **Backup and recovery**: how to combine OpenClaw's native backup capability with operator-level restore discipline.
@@ -42,7 +43,7 @@ Start with [`START_HERE.md`](START_HERE.md) if you want the fastest copy-and-ada
 
 ## OpenClaw already provides primitives
 
-OpenClaw has native capabilities for models, skills, approvals, sessions, and backups. This playbook sits above those primitives and describes how an operator can combine them into a reliable workflow.
+OpenClaw has native capabilities for models, skills, approvals, sessions, backups, and Workboard task tracking. This playbook sits above those primitives and describes how an operator can combine them into a reliable workflow.
 
 Useful OpenClaw surfaces include:
 
@@ -50,6 +51,7 @@ Useful OpenClaw surfaces include:
 - `openclaw skills` and workspace `SKILL.md` files for reusable workflows.
 - `openclaw approvals` / `openclaw exec-policy` for exec approval posture.
 - `openclaw backup create --verify` for first-class local state archives.
+- `openclaw workboard` for durable card tracking and supervised worker dispatch where the plugin is enabled.
 - `/new`, `/reset`, `/compact`, and session/thread concepts for context management.
 
 Always verify real config fields against official OpenClaw docs before copying examples into a live `openclaw.json`.

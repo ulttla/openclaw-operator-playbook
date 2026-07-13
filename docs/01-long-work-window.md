@@ -111,6 +111,18 @@ Examples:
 
 Use [`../templates/prompts/closeout-template.md`](../templates/prompts/closeout-template.md). A closeout should make the next session obvious.
 
+## Durable execution safeguards
+
+For scheduled or multi-chunk work, add proof around the lifecycle:
+
+1. Read back required wake registrations after creating them.
+2. Record whether a wake actually fired; registration alone is not execution proof.
+3. Block completion when expected execution evidence is missing.
+4. Deliver the visible closeout, read it back, and only then mark the state complete.
+5. Run a supervisor scan for stale active windows or partial bookkeeping; automate only safe repairs.
+
+This is an operator hardening pattern, not a claim that every OpenClaw installation provides these controls by default.
+
 ## Recovery pattern
 
 If the session resets or the agent loses context:

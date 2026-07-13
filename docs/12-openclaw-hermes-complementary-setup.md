@@ -9,7 +9,7 @@ The public-safe pattern is simple: keep one lane accountable for the active user
 | Lane | Good fit | Avoid |
 |---|---|---|
 | OpenClaw | Multi-channel coordination, workboard-driven execution, browser/session workflows, cron, approval gates, portfolio or repo delivery | Treating every task as a single-chat automation run |
-| Hermes | Focused research, recovery review, follow-up automation, self-improving skill experiments, operator-side maintenance | Presenting it as unattended failover or a production administrator |
+| Hermes | Focused research, scheduled operations, durable task tracking, recovery review, follow-up automation, and operator-side maintenance | Presenting it as unattended failover or a production administrator |
 | Human operator | Approval for risky actions, final public claims, credentials, deployments, service lifecycle, external posting | Rubber-stamping opaque automation |
 
 ## Shared brain
@@ -42,7 +42,7 @@ This keeps the second lane from expanding the task beyond the operator's intent.
 ## Practical operating loop
 
 1. OpenClaw runs the broad workflow: scope, workboard card, execution, validation, and final closeout.
-2. Hermes reviews a bounded slice: release risk, recovery checklist, research summary, or follow-up automation candidates.
+2. Hermes reviews a bounded slice or owns a clearly separated durable task: release risk, recovery checklist, research summary, scheduled brief, or follow-up automation candidate.
 3. The human operator approves any risky action before it happens.
 4. Evidence is recorded in a closeout, then sanitized before any public release.
 5. Lessons that should survive future sessions are promoted into durable knowledge, not left only in chat.

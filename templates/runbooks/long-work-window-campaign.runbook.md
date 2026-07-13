@@ -51,6 +51,13 @@ Validation expected:
 }
 ```
 
+## Registration and execution proof
+
+- Create required check-in, warning, closeout, or transition wakes.
+- Read back the scheduler records and store their identifiers in the state record.
+- Treat registration proof and execution proof as separate facts.
+- If an expected wake did not fire, block completion and use an approved recovery path instead of silently advancing.
+
 ## Check-in format
 
 ```text
@@ -86,6 +93,8 @@ Each chunk closeout should include:
 - approval gates hit;
 - remaining work;
 - next chunk start condition.
+
+Closeout should be transactional: send the visible result, read it back from the intended destination, reconcile that proof into durable state, then mark the chunk complete.
 
 ## Under-use guard
 
