@@ -1,3 +1,5 @@
+Archived lab notes (Apr–Jul 2026). Current write-up: https://gunkr.com/lab
+
 # OpenClaw Operator Playbook
 
 A practical field manual for running a personal AI operator workstation with OpenClaw.
